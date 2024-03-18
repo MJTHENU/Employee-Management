@@ -10,15 +10,40 @@ Installation
 This project is for employee management.Employee can register himself and employee can assign a salary for employee...
 
 Clone the repo
-git clone https://
+git clone [https://](https://github.com/MJTHENU/Employee-Management.git)
 
-Composer install
-cd Employee-management-system-in-laravel composer install
+Employee Attendance System
+Features
+ CRUD Positions (Manage Job Positions)
+ CRUD Users (Admins, Operators, and Employees)
+ CRUD Holidays (Manage Holidays)
+ CRUD Attendances (Track Employee Attendance with QR Codes or Buttons)
+ Utilizes Datatables (Powered by Livewire)
+ Export Data to Excel and CSV Formats
+ And More...
+Installation Instructions
+Prerequisites
+- Git
+- Composer
+- PHP v8.1
 
-Database
-Ajust the database information, then:
+# First, clone the repository via command line (cmd, bash, or other terminals)
+git clone https://github.com/sgnd/employee-attendance-system.git
 
+# Navigate to the project folder
+cd employee-attendance-system
+
+# Install all required packages
+composer install
+
+# Copy example env to .env and configure the file by specifying the database name (DB_DATABASE), username, and password
+cp .env.example .env
+
+# Generate a new application key, run migrations, seed the database, and start the development server:
+php artisan key:generate
 php artisan migrate
-
-Seed the database:
 php artisan db:seed
+php artisan serve
+
+# Finally, open your web browser
+http://localhost:8000
