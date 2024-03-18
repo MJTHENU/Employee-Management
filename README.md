@@ -27,8 +27,6 @@ Prerequisites
 - Composer
 - PHP v8.1
 
-# First, clone the repository via command line (cmd, bash, or other terminals)
-git clone https://github.com/sgnd/employee-attendance-system.git
 
 # Navigate to the project folder
 cd employee-attendance-system
